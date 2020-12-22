@@ -1,0 +1,184 @@
+body {
+    margin                : 0;
+    padding               : 0;
+}
+
+.container {
+    display               : flex;
+    align-items           : center;
+    justify-content       : center;
+    flex-direction        : column;
+}
+
+p {
+    font-weight           : bold;
+    margin-top            : -9px;
+    margin-bottom         : 5px;
+
+}
+
+.texto-h1 {
+    width                 : 100%;
+    display               : flex;
+    justify-content       : center;
+}
+
+.container-slider {
+    width                 : 100vw;
+    height                : 50vh;
+    display               : flex;
+    justify-content       : center;
+}
+
+.slider {
+    width                 : 800px;
+    height                : 450px;
+    display               : flex;
+    background            : url(1.jpg) no-repeat;
+    background-position   : 0 center;
+    background-size       : 800px;
+    position              : relative;
+}
+
+.slider input {
+    -webkit-appearance    : none;
+    width                 : 100%;
+     /* tira o cor de fundo do input range*/
+    background            : none;
+    /* ----------------------------------- */
+    z-index               : 10;
+}
+
+.slider input::-webkit-slider-thumb {
+    /*faz o ponteiro do input range sumir*/
+    -webkit-appearance    : none;
+    /* ----------------------------------- */
+    width                 : 6.4px;
+    height                : 450px;
+    background-color      : rgb(255, 255, 255);
+}
+
+.original-image {
+    position              : absolute;
+    left                  : 0;
+    width                 : 20%;
+    height                : 450px;
+    background            : url(2.jpg) no-repeat;
+    background-position   : 0 center;
+    background-size       : 800px;
+}
+
+/* ----------------responsivel 1------------------- */
+@media (max-width: 821px) {
+    p {
+        font-size: 12px;
+    }
+
+    .texto-h1 {
+        font-size: 12px;
+    }
+
+    .container-slider {
+        width                 : 444px;
+        height                : 248px;
+        background-color: blue;
+    }
+
+    .slider {
+        width                 : 448px;
+        height                : 252px;
+        background-size       : 448px;
+    }
+
+    .slider input {
+        width                 : 100%;
+    }
+
+    
+    .slider input::-webkit-slider-thumb {
+        width                 : 3.4px;
+        height                : 252px;
+    }
+
+    .original-image {
+        width                 : 20%;
+        height                : 252px;
+        background-size       : 448px;
+    }
+}
+
+/* ----------------responsivel 1------------------- */
+@media (max-width: 471px) {
+    p {
+        font-size: 10px;
+    }
+
+    .texto-h1 {
+        font-size: 10px;
+    }
+
+    .container-slider {
+        width                 : 310.8px;
+        height                : 173.6px;
+        background-color: blue;
+    }
+
+    .slider {
+        width                 : 313.6px;
+        height                : 176.4px;
+        background-size       : 313.6px;
+    }
+
+    .slider input {
+        width                 : 100%;
+    }
+
+    .slider input::-webkit-slider-thumb {
+        width                 : 3.48px;
+        height                : 176.4px;
+    }
+
+    .original-image {
+        width                 : 20%;
+        height                : 176.4px;
+        background-size       : 313.6px;
+    }
+}
+
+/* ----------------responsivel 3------------------- */
+@media (max-width: 337px) {
+    p {
+        font-size: 8px;
+    }
+
+    .texto-h1 {
+        font-size: 10px;
+    }
+
+    .container-slider {
+        width                 : 217.56px;
+        height                : 123.48px;
+        background-color: blue;
+    }
+
+    .slider {
+        width                 : 219.52px;
+        height                : 123.48px;
+        background-size       : 219.52px;
+    }
+
+    .slider input {
+        width                 : 100%;
+    }
+
+    .slider input::-webkit-slider-thumb {
+        width                 : 3.48px;
+        height                : 123.48px;
+    }
+
+    .original-image {
+        width                 : 20%;
+        height                : 123.48px;
+        background-size       : 219.52px;
+    }
+}
